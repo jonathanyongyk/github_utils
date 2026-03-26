@@ -5,8 +5,8 @@ A collection of Python scripts for managing GitHub organizations, teams, reposit
 ## Overview
 
 These scripts provide bulk operations for:
-- **Retrieving** organization, team, repository, and membership data to CSV
-- **Creating** organizations, teams, and repositories
+- **Retrieving** organization team, repository, and membership data to CSV
+- **Creating** organizations teams, and repositories
 - **Assigning** users to organizations, teams, and repositories
 
 All scripts require a GitHub Personal Access Token (PAT) and support both token argument and `GITHUB_TOKEN` environment variable.
@@ -15,28 +15,28 @@ All scripts require a GitHub Personal Access Token (PAT) and support both token 
 
 ### Retrieval (GET)
 
-| Script | Purpose | CSV Output |
-|--------|---------|-----------|
-| `get_org_teams.py` | List all teams in an organization | team metadata |
-| `get_org_members.py` | List all members in an organization | member IDs and roles |
-| `get_org_repos.py` | List all repositories in an organization | repository metadata |
-| `get_team_repos.py` | List repositories accessible to each team and team permissions | team-repo mappings with permissions |
-| `get_team_members.py` | List members of each team | team-member mappings |
+| Script | Purpose |
+|--------|---------|
+| `get_org_teams.py` | List all teams in an organization |
+| `get_org_members.py` | List all members in an organization |
+| `get_org_repos.py` | List all repositories in an organization |
+| `get_team_repos.py` | List repositories accessible to each team and team permissions |
+| `get_team_members.py` | List members of each team |
 
 ### Creation (CREATE)
 
-| Script | Purpose | Input |
-|--------|---------|-------|
-| `create_teams.py` | Create teams in bulk from CSV | team names, privacy, optional parent team |
-| `create_repos.py` | Create repositories in bulk from CSV | repo names, descriptions, admin user |
+| Script | Purpose |
+|--------|---------|
+| `create_teams.py` | Create teams in bulk from CSV |
+| `create_repos.py` | Create repositories in bulk from CSV |
 
 ### Assignment (ASSIGN)
 
-| Script | Purpose | Input |
-|--------|---------|-------|
-| `assign_org_users.py` | Assign users to organizations | org name, username, role |
-| `assign_team_members.py` | Assign users to teams in bulk | team, username, role |
-| `assign_team_repos.py` | Assign repositories to teams in bulk | team, repository, permission |
+| Script | Purpose |
+|--------|---------|
+| `assign_org_users.py` | Assign users to organizations |
+| `assign_team_members.py` | Assign users to teams in bulk |
+| `assign_team_repos.py` | Assign repositories to teams in bulk |
 
 ## Quick Start
 
