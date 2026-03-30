@@ -74,6 +74,9 @@ Detailed documentation for each script is available in the `docs/` directory:
 - [docs/assign_team_members.md](docs/assign_team_members.md)
 - [docs/assign_team_repos.md](docs/assign_team_repos.md)
 
+Reference guide:
+- [docs/github-team-structure-guide.md](docs/github-team-structure-guide.md) - Recommended nested team structure for regular members and TechLeads, including role and permission design guidance.
+
 ## Shared Utilities
 
 The following functions are shared across scripts:
