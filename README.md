@@ -1,6 +1,6 @@
 # GitHub Utils
 
-A collection of Python scripts for managing GitHub organizations, teams, repositories, and memberships via the GitHub REST API.
+A collection of Python scripts for managing GitHub enterprises, organizations, teams, repositories, and memberships via the GitHub REST and GraphQL APIs.
 
 ## Overview
 
@@ -17,9 +17,11 @@ All scripts require a GitHub Personal Access Token (PAT) and support both token 
 
 | Script | Purpose |
 |--------|---------|
+| `get_enterprise_orgs.py` | List all organizations in a GitHub Enterprise account |
 | `get_org_teams.py` | List all teams in an organization |
 | `get_org_members.py` | List all members in an organization |
 | `get_org_repos.py` | List all repositories in an organization |
+| `get_org_repos_with_last_commit.py` | List all repositories with last commit date, last commit author, and creator |
 | `get_team_repos.py` | List repositories accessible to each team and team permissions |
 | `get_team_members.py` | List members of each team |
 
@@ -63,9 +65,11 @@ python src/get_org_teams.py --org-name my-org --output-csv teams_out.csv
 ## Documentation
 
 Detailed documentation for each script is available in the `docs/` directory:
+- [docs/get_enterprise_orgs.md](docs/get_enterprise_orgs.md)
 - [docs/get_org_teams.md](docs/get_org_teams.md)
 - [docs/get_org_members.md](docs/get_org_members.md)
 - [docs/get_org_repos.md](docs/get_org_repos.md)
+- [docs/get_org_repos_with_last_commit.md](docs/get_org_repos_with_last_commit.md)
 - [docs/get_team_repos.md](docs/get_team_repos.md)
 - [docs/get_team_members.md](docs/get_team_members.md)
 - [docs/create_teams.md](docs/create_teams.md)
